@@ -1,0 +1,77 @@
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+    }
+
+    .container{
+        max-width: 28rem;
+        padding-right: 0;
+        padding-left: 0;
+        margin-right: 0;
+        margin-left: 0;
+
+    }
+
+    html{
+        height: 100%;
+    }
+
+    body{
+        background-color: rgb(128, 128, 216);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100%;
+        color: #fff;
+        line-height: 1.4rem;
+    }
+
+    .box{
+        background: #E0E0E0;
+        border-radius: 20px;
+        box-shadow: 0 1.5px 0 0 rgba(0,0,0,0.1);
+        max-width: 28rem;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .login-item{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 4rem;
+    }
+</style>
+
+<div class="box">
+    <div class="login-item">
+        <form action="/login" method="POST" class="form form-login"> <!-- colocar a acao dps-->
+            <div class="form-group">
+                <label class="user" for="login-username"><span class="hidden"></span></label>
+                <input 
+                id="login-username"
+                 name="usuario" 
+                 type="text" 
+                 class="form-input" 
+                 placeholder="Usuário"
+                
+                 >  
+            </div>
+            <div class="form-group">
+                <label class="lock" for="login-password"><span class="hidden"></span></label>
+                <input 
+                id="login-password" 
+                name="senha" 
+                type="password" 
+                class="form-input" 
+                placeholder="Senha"
+                
+                >
+            </div>
+            <div class="form-group">
+                <input type="submit" value="ENTRAR">
+            </div>
+        </form>
+    </div>
+</div>
